@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	/* function     format            argument */
   // { wifi_essid,		"[ %s]",		      "wlp2s0"},
 	// { battery_perc,	"[BAT  %s%%]",		"BAT0"},
-  { run_command,  "[ %s] ",      "~/git/scripts/tailscale2.sh" },
+  { run_command,  "[%s] ",          "~/git/scripts/tailscale2.sh" },
   { run_command,  "[ %s] ",        "wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -oP '[0-9.]+(?=$)' | awk '{printf \"%.0f%%\", $1*100}'" },
 	{ cpu_perc,     "[CPU  %s%%] ",	NULL },
 	{ ram_perc,     "[RAM  %s%%] ",  NULL },
